@@ -137,10 +137,12 @@ label {
 	padding-left:20px;
 	padding-right:20px;
 	margin-bottom:60px;
+	margin-left: 222px;
+    margin-right: 0px;
 
 }
-#content.phone{	background:  url(../image/bg_bottom_banner.png) bottom no-repeat; padding-bottom:180px}
-#column-left + #column-right + #content, #column-left + #content {
+.phone{	background:  url(../image/bg_bottom_banner.png) bottom no-repeat; padding-bottom:180px}
+/*#column-left + #column-right + #content, #column-left + #content {
 	margin-left: 222px;
 	margin-right:0px;
 }
@@ -149,7 +151,7 @@ label {
 	margin-left:0px;
 	min-height:440px
 }
-
+*/
 
 
 /* header */
@@ -1005,10 +1007,10 @@ input.button:hover {
 	padding-bottom:80px
 }
 
-.product-list > div > div.left_{float: left;background: url("../image/bg_product.png") no-repeat scroll left top transparent;
+.left_{float: left;background: url("../image/bg_product.png") no-repeat scroll left top transparent;
     height: 214px;    width: 170px; padding-top:3px; margin-left:5px}
 
-#column-left + #content .product-list > div > div.right_{ display: block; margin-left:175px; height:210px; background:url(../image/bg_down_menu.png) left top repeat; border-top: 3px #6b2b11 solid; width:550px}
+.right_{ display: block; margin-left:175px; height:210px; background:url(../image/bg_down_menu.png) left top repeat; border-top: 3px #6b2b11 solid; width:550px}
 
 .product-list > div + div {
 	padding-top: 0px;
@@ -1187,7 +1189,8 @@ input.button:hover {
 .product-info {
 	overflow: auto;
 	margin-bottom: 20px;
-	margin-left:10px
+	margin-left:10px;
+	padding: 10px;
 }
 .product-info > .left {
 	float: left;
@@ -1977,17 +1980,23 @@ div#tab-related .box-product .image img {
 #captcha{ margin-top:5px}
 
 
-div.latest{ background: url(../image/bg_shelf.png) 50% top no-repeat; padding-top:12px; padding-bottom:30px}
-div.latest .box-heading{ background: url(../image/bg_box_head_1.png) 50% top no-repeat; height:75px; 
-	font-family: 'ThyssenJRegular';
-	font-size:36px;
-	font-weight: normal;
-	line-height: 40px;
-	color: #161412;
-	text-align: center;
-	text-shadow: 1px 1px #bbb3a5;
-	letter-spacing:1px;
-	padding-top:38px
+div.latest {
+  background: url(../image/bg_categories.png) 50% -11px no-repeat;
+  padding-top: 12px;
+  padding-bottom: 30px;
+}
+div.latest .box-heading {
+  background: url(../image/bg_box_head_1.png) 50% 19px no-repeat;
+  height: 75px;
+  font-family: 'ThyssenJRegular';
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #161412;
+  text-align: center;
+  text-shadow: 1px 1px #bbb3a5;
+  letter-spacing: 1px;
+  padding-top: 60px;
 }
 
 div.box-product > div { float: left;
@@ -1995,7 +2004,7 @@ div.box-product > div { float: left;
     width: 170px; 
 	background: url("../image/bg_product.png") no-repeat scroll left top transparent;
     margin-bottom: 72px;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     min-height: 220px;
     position: relative;
 	overflow:hidden
@@ -2003,7 +2012,7 @@ div.box-product > div { float: left;
 
 .clear{ clear:both}
 
-.latest .box-product { padding-left:50px; background:url(../image/bg_latest.png) left 185px repeat-y}
+.latest .box-product { padding-left:50px; background:url(../image/bg_categories.png) left 185px repeat-y}
 
 
 .phone #banner0{ position:absolute; z-index:100; left:25px; bottom:12px}
@@ -2018,7 +2027,7 @@ td.quantity input { min-width:20px}
 #content > span{ display:block; background: url(../image/bg_down_menu.png) left top repeat; padding:20px; margin-bottom:100px; border-top:3px #6b2b11 solid}
 body.homa #content > span, #column-left + #content > span{ display:block; background:none; border:0; margin:0; padding:0; padding-bottom:15px}
 
-div.product-list div.right_{ background:none; border:0}
+/*div.product-list div.right_{ background:none; border:0}*/
 
 
 div.phone_bottom{
@@ -2036,4 +2045,14 @@ div.phone_bottom p {
 	color:#342112;
 	font-size:55px;
 	margin-top:25px
+}
+.alpha60 {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(255, 255, 255);
+	/* RGBa with 0.6 opacity */
+	background: rgba(255, 255, 255, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF)";
 }

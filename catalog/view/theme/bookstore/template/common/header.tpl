@@ -63,15 +63,7 @@ DD_belatedPNG.fix('#logo img');
     <div class="button-search"></div>
     <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
   </div>
-  <div id="menu">
-  <ul>
-      <li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>
-      <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-      <li><a href="<?php echo $compare; ?>"><?php //echo $text_compare; ?></a></li>
-      <li><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></li>
-      <li><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li>
-  </ul>
-</div>
+	<?php echo $menu; ?>
 </div>
 
 <?php if ($error) { ?>

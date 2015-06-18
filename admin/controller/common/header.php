@@ -103,6 +103,7 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_weight_class'] = $this->language->get('text_weight_class');
 		$this->data['text_length_class'] = $this->language->get('text_length_class');
 		$this->data['text_zone'] = $this->language->get('text_zone');
+		$this->data['text_menus'] = $this->language->get('text_menus');
 		$this->data['text_openbay_extension'] = $this->language->get('text_openbay_extension');
 		$this->data['text_openbay_dashboard'] = $this->language->get('text_openbay_dashboard');
 		$this->data['text_openbay_orders'] = $this->language->get('text_openbay_orders');
@@ -192,7 +193,7 @@ class ControllerCommonHeader extends Controller {
 			$this->data['weight_class'] = $this->url->link('localisation/weight_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['length_class'] = $this->url->link('localisation/length_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['zone'] = $this->url->link('localisation/zone', 'token=' . $this->session->data['token'], 'SSL');
-
+			$this->data['menus'] = $this->url->link('menu/menus', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['openbay_show_menu'] = $this->config->get('openbaymanager_show_menu');
 
 			$this->data['openbay_link_extension'] = $this->url->link('extension/openbay', 'token=' . $this->session->data['token'], 'SSL');
