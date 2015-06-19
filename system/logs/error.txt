@@ -212,3 +212,15 @@
 2015-06-17 21:49:41 - PHP Warning:  unlink(C:\xampp\htdocs\opencart15.test\www/system/cache/cache.currency.1434484518): Permission denied in C:\xampp\htdocs\opencart15.test\www\system\library\cache.php on line 18
 2015-06-17 21:49:41 - PHP Warning:  unlink(C:\xampp\htdocs\opencart15.test\www/system/cache/cache.currency.1434484518): Permission denied in C:\xampp\htdocs\opencart15.test\www\system\library\cache.php on line 18
 2015-06-17 21:49:41 - PHP Warning:  unlink(C:\xampp\htdocs\opencart15.test\www/system/cache/cache.currency.1434484518): Permission denied in C:\xampp\htdocs\opencart15.test\www\system\library\cache.php on line 18
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: column_name in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 6
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: column_model in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 7
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: column_quantity in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 8
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: column_price in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 9
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: column_total in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 10
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 14
+2015-06-18 21:01:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 14
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: vouchers in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 40
+2015-06-18 21:01:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 40
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: totals in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 51
+2015-06-18 21:01:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 51
+2015-06-18 21:01:19 - PHP Notice:  Undefined variable: payment in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\bookstore\template\checkout\confirm.tpl on line 60

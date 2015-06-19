@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	
+	
+	
+		
+		$('.box-product ul li > div, .product-grid > div, .box-product > div').hover( 
+		function(){
+			$(this).find('.open_content').fadeIn(300);
+		}, function(){
+			$(this).find('.open_content').fadeOut(200);
+		});
+
+		
+
 	/* Search */
 	$('.button-search').bind('click', function() {
 		url = $('base').attr('href') + 'index.php?route=product/search';

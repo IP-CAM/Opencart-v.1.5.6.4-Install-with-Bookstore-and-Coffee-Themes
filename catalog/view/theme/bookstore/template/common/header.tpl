@@ -57,7 +57,7 @@ DD_belatedPNG.fix('#logo img');
   </div>
   <div id="headcontacts"><?//php echo $headcontacts; ?></div>
   <?php echo $language; ?>
-  <?php echo $currency; ?>
+  <?php //echo $currency; ?>
   <?php echo $cart; ?>
   <div id="search">
     <div class="button-search"></div>
