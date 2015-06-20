@@ -47,7 +47,7 @@ class ControllerCheckoutGuestShipping extends Controller {
 		} else {
 			$this->data['address_2'] = '';
 		}
-
+/*
 		if (isset($this->session->data['guest']['shipping']['postcode'])) {
 			$this->data['postcode'] = $this->session->data['guest']['shipping']['postcode'];	
 		} elseif (isset($this->session->data['shipping_postcode'])) {
@@ -81,7 +81,7 @@ class ControllerCheckoutGuestShipping extends Controller {
 		$this->load->model('localisation/country');
 		
 		$this->data['countries'] = $this->model_localisation_country->getCountries();
-		
+		*/
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout/guest_shipping.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/checkout/guest_shipping.tpl';
 		} else {
@@ -112,19 +112,19 @@ class ControllerCheckoutGuestShipping extends Controller {
 		} 
 		
 		if (!$json) {		
-			if ((utf8_strlen($this->request->post['firstname']) < 1) || (utf8_strlen($this->request->post['firstname']) > 32)) {
+			/*if ((utf8_strlen($this->request->post['firstname']) < 1) || (utf8_strlen($this->request->post['firstname']) > 32)) {
 				$json['error']['firstname'] = $this->language->get('error_firstname');
 			}
 	
 			if ((utf8_strlen($this->request->post['lastname']) < 1) || (utf8_strlen($this->request->post['lastname']) > 32)) {
 				$json['error']['lastname'] = $this->language->get('error_lastname');
 			}
-			
+			*/
 			if ((utf8_strlen($this->request->post['address_1']) < 3) || (utf8_strlen($this->request->post['address_1']) > 128)) {
 				$json['error']['address_1'] = $this->language->get('error_address_1');
 			}
 	
-			if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {
+			/*if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {
 				$json['error']['city'] = $this->language->get('error_city');
 			}
 			
@@ -142,21 +142,21 @@ class ControllerCheckoutGuestShipping extends Controller {
 			
 			if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '') {
 				$json['error']['zone'] = $this->language->get('error_zone');
-			}	
+			}	*/
 		}
 		
 		if (!$json) {
-			$this->session->data['guest']['shipping']['firstname'] = trim($this->request->post['firstname']);
-			$this->session->data['guest']['shipping']['lastname'] = trim($this->request->post['lastname']);
-			$this->session->data['guest']['shipping']['company'] = trim($this->request->post['company']);
+			//$this->session->data['guest']['shipping']['firstname'] = trim($this->request->post['firstname']);
+			//$this->session->data['guest']['shipping']['lastname'] = trim($this->request->post['lastname']);
+			//$this->session->data['guest']['shipping']['company'] = trim($this->request->post['company']);
 			$this->session->data['guest']['shipping']['address_1'] = $this->request->post['address_1'];
 			$this->session->data['guest']['shipping']['address_2'] = $this->request->post['address_2'];
-			$this->session->data['guest']['shipping']['postcode'] = $this->request->post['postcode'];
-			$this->session->data['guest']['shipping']['city'] = $this->request->post['city'];
-			$this->session->data['guest']['shipping']['country_id'] = $this->request->post['country_id'];
-			$this->session->data['guest']['shipping']['zone_id'] = $this->request->post['zone_id'];
+			//$this->session->data['guest']['shipping']['postcode'] = $this->request->post['postcode'];
+			//$this->session->data['guest']['shipping']['city'] = $this->request->post['city'];
+			//$this->session->data['guest']['shipping']['country_id'] = $this->request->post['country_id'];
+			//$this->session->data['guest']['shipping']['zone_id'] = $this->request->post['zone_id'];
 			
-			$this->load->model('localisation/country');
+			/*$this->load->model('localisation/country');
 			
 			$country_info = $this->model_localisation_country->getCountry($this->request->post['country_id']);
 			
@@ -189,7 +189,7 @@ class ControllerCheckoutGuestShipping extends Controller {
 			$this->session->data['shipping_postcode'] = $this->request->post['postcode'];	
 			
 			unset($this->session->data['shipping_method']);	
-			unset($this->session->data['shipping_methods']);
+			unset($this->session->data['shipping_methods']);*/
 		}
 		
 		$this->response->setOutput(json_encode($json));		

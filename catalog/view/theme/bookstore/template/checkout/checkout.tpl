@@ -7,21 +7,13 @@
   </div>
   <h1><?php echo $heading_title; ?></h1>
   <div class="checkout">
-    <div id="checkout">
-      <div class="checkout-heading"><?php echo $text_checkout_option; ?></div>
-      <div class="checkout-content"></div>
-    </div>
-    <?php if (!$logged) { ?>
+
+
     <div id="payment-address">
       <div class="checkout-heading"><span><?php echo $text_checkout_account; ?></span></div>
       <div class="checkout-content"></div>
     </div>
-    <?php } else { ?>
-    <div id="payment-address">
-      <div class="checkout-heading"><span><?php echo $text_checkout_payment_address; ?></span></div>
-      <div class="checkout-content"></div>
-    </div>
-    <?php } ?>
+
     <?php if ($shipping_required) { ?>
     <div id="shipping-address">
       <div class="checkout-heading"><?php echo $text_checkout_shipping_address; ?></div>
@@ -43,7 +35,47 @@
   </div>
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
-$('#checkout .checkout-content input[name=\'account\']').live('change', function() {
+
+
+
+$(document).ready( function() {
+	$.ajax({
+		url: 'index.php?route=checkout/guest',
+		dataType: 'html',
+		beforeSend: function() {
+			$('#button-account').attr('disabled', true);
+			$('#button-account').after('<span class="wait">&nbsp;<img src="catalog/view/theme/default/image/loading.gif" alt="" /></span>');
+		},		
+		complete: function() {
+			$('#button-account').attr('disabled', false);
+			$('.wait').remove();
+		},			
+		success: function(html) {
+			$('.warning, .error').remove();
+			
+			$('#payment-address .checkout-content').html(html);
+				
+			//$('#checkout .checkout-content').slideUp('slow');
+				
+			$('#payment-address .checkout-content').slideDown('slow');
+				
+			$('.checkout-heading a').remove();
+				
+			//$('#checkout .checkout-heading').append('<a><?php echo $text_modify; ?></a>');
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	});
+});
+
+$('.checkout-heading a').live('click', function() {
+	$('.checkout-content').slideUp('slow');
+	
+	$(this).parent().parent().find('.checkout-content').slideDown('slow');
+});
+
+/*$('#checkout .checkout-content input[name=\'account\']').live('change', function() {
 	if ($(this).attr('value') == 'register') {
 		$('#payment-address .checkout-heading span').html('<?php echo $text_checkout_account; ?>');
 	} else {
@@ -129,7 +161,6 @@ $('#button-account').live('click', function() {
 	});
 });
 
-// Login
 $('#button-login').live('click', function() {
 	$.ajax({
 		url: 'index.php?route=checkout/login/validate',
@@ -344,7 +375,7 @@ $('#button-register').live('click', function() {
 		}
 	});	
 });
-
+*/
 // Payment Address	
 $('#button-payment-address').live('click', function() {
 	$.ajax({
@@ -934,7 +965,7 @@ $('#button-payment-method').live('click', function() {
 		}
 	});	
 });
-
+/*
 function quickConfirm(module){
 	$.ajax({
 		url: 'index.php?route=checkout/confirm',
@@ -966,6 +997,6 @@ function quickConfirm(module){
 			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
 		}
 	});	
-}
+}*/
 //--></script> 
 <?php echo $footer; ?>
