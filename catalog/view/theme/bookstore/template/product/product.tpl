@@ -1,4 +1,6 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<?php echo $header; ?>
+<div class="bg_content">
+<?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -347,6 +349,7 @@
   </div>
   <?php } ?>
   <?php echo $content_bottom; ?></div>
+</div> <!-- bg_content-->
 <script type="text/javascript"><!--
 $(document).ready(function() {
 	$('.colorbox').colorbox({

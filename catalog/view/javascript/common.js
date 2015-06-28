@@ -1,7 +1,19 @@
 $(document).ready(function() {
 	
-	
-	
+		var img_url=$('#logo_img').attr('src');
+		$('#logo_img').on('hover', function(){
+			
+			$(this).attr('src', '/catalog/view/theme/bookstore/image/logo_hover.png');
+			
+		});
+		$('#logo_img').on('mouseleave', function() {
+			$(this).attr('src', img_url);
+			
+			
+		});
+		
+		
+		
 		
 		$('.box-product ul li > div, .product-grid > div, .box-product > div').hover( 
 		function(){
@@ -146,6 +158,7 @@ function addToCart(product_id, quantity) {
 				$('#cart-total').html(json['total']);
 				
 				$('html, body').animate({ scrollTop: 0 }, 'slow'); 
+				$('.success').fadeOut(5000);
 			}	
 		}
 	});

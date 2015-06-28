@@ -3,7 +3,7 @@ class ModelShippingFlat extends Model {
 	function getQuote($address) {
 		$this->language->load('shipping/flat');
 
-		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone WHERE geo_zone_id = '" . (int)$this->config->get('flat_geo_zone_id') . "' AND country_id = '" . (int)$address['country_id'] . "' AND (zone_id = '" . (int)$address['zone_id'] . "' OR zone_id = '0')");
+		/*$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone WHERE geo_zone_id = '" . (int)$this->config->get('flat_geo_zone_id') . "' AND country_id = '" . (int)$address['country_id'] . "' AND (zone_id = '" . (int)$address['zone_id'] . "' OR zone_id = '0')");
 
 		if (!$this->config->get('flat_geo_zone_id')) {
 			$status = true;
@@ -12,10 +12,10 @@ class ModelShippingFlat extends Model {
 		} else {
 			$status = false;
 		}
-
+*/
 		$method_data = array();
 
-		if ($status) {
+		//if ($status) {
 			$quote_data = array();
 
 			$quote_data['flat'] = array(
@@ -33,7 +33,7 @@ class ModelShippingFlat extends Model {
 				'sort_order' => $this->config->get('flat_sort_order'),
 				'error'      => false
 			);
-		}
+		//}
 
 		return $method_data;
 	}

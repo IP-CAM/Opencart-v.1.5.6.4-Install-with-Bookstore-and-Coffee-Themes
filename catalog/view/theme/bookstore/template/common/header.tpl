@@ -46,24 +46,21 @@ DD_belatedPNG.fix('#logo img');
 <div id="container">
 <div id="header">
   <?php if ($logo) { ?>
-  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
+  <div id="logo"><a href="<?php echo $home; ?>"><img id="logo_img" src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
   <?php } ?>
-  <div id="welcome">
-    <?php if (!$logged) { ?>
-    <?php echo $text_welcome; ?>
-    <?php } else { ?>
-    <?php echo $text_logged; ?>
-    <?php } ?>
-  </div>
-  <div id="headcontacts"><?//php echo $headcontacts; ?></div>
-  <?php echo $language; ?>
-  <?php //echo $currency; ?>
-  <?php echo $cart; ?>
-  <div id="search">
-    <div class="button-search"></div>
-    <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
-  </div>
+
+ 
+  
+	<?php echo $cart; ?>
+	<div class="phones">
+	<div class="phone_ico">
+		8-926-582-24-83 <br />
+		8-925-825-30-40
+	</div>
+	</div>
 	<?php echo $menu; ?>
+	
+	
 </div>
 
 <?php if ($error) { ?>

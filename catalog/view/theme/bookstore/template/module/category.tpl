@@ -1,7 +1,7 @@
-<div class="box">
+<div class="box roll_top">
   <div class="box-heading"><?php echo $heading_title; ?></div>
-  <div class="box-content">
-   <div class="box-category">  
+  <div class="box-content roll_bottom">
+   <div class="box-category roll_bg">  
 	<ul>
       <?php foreach ($categories as $category) { ?>
       <li>

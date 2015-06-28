@@ -1,7 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-/* 
-font-family: 'Oswald', sans-serif; 
-*/
+
+
+@font-face {
+  font-family: Cuprum;
+  src: url(../image/Cuprum.otf) format("opentype");
+}
 html {
 	margin: 0;
 	padding: 0;
@@ -22,7 +24,7 @@ body, td, th, input, textarea, select, a {
 
 h1, .welcome {
 	color: #161412;
-	font-family: 'ThyssenJRegular';
+	font-family: 'Cuprum';
 	margin-bottom: 15px;
 	font-size: 30px;
 	font-weight: normal;
@@ -34,7 +36,7 @@ h1, .welcome {
 }
 h2 {
 	color: #000;
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Cuprum', sans-serif; 
 	margin-top: 20px;
 	margin-bottom: 15px;
 	font-size: 18px;
@@ -117,7 +119,7 @@ label {
 	width: 222px;
 	padding-bottom:0px;
 	padding-top:0px;
-	background: url(../image/bg_left_column.jpg) left top repeat-y;
+	/*background: url(../image/bg_left_column.jpg) left top repeat-y;*/
 	margin:0;
 	margin-top:45px;
 	margin-bottom:46px
@@ -161,9 +163,9 @@ label {
 	z-index: 99;
 }
 #header #logo {
-	position: absolute;
-	top: -1px;
-	left: 0px;
+position: absolute;
+  top: 62px;
+  left: 24px;
 }
 #language {
 	position: absolute;
@@ -206,20 +208,21 @@ label {
 #currency a:hover{ color:#fff; border-color:#fff}
 
 #header #cart {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	z-index: 106;
-	min-width: 300px;
-	
+  position: absolute;
+  top: 3px;
+  right: 216px;
+  z-index: 106;
+  min-width: 300px;
+  background: url(../image/bg_box_head_2.png) 50px 0px no-repeat;
+  font-family:'Cuprum';
 }
 #header #cart .heading {
 	float: right;
 	position: relative;
 	z-index: 1;
 	position: relative;
-	padding:0px 38px 0 50px;
-	height:75px;
+	padding: 9px 38px 0 50px;
+	height:112px;
 	-webkit-box-shadow: 0px 0px 0px #000;
 	-moz-box-shadow: 0px 0px 0px #000;
 	box-shadow: 0px 0px 0px #000;
@@ -227,7 +230,7 @@ label {
 }
 #header #cart .heading h4 {
 	color: #000;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: bold;
 	margin-top: 0px;
 	margin-bottom: 3px;
@@ -238,7 +241,7 @@ label {
 	color: #6a260d;
 	text-decoration: none;
 	line-height:20px;
-	font-size:14px;
+	font-size:16px;
 	font-weight:bold;
 }
 #header #cart .heading a span {
@@ -248,25 +251,27 @@ label {
 	
 }
 #header #cart .content {
-	clear: both;
-	display: none;
-	position: relative;
-	top: -1px;
-	padding: 8px;
-	min-height: 150px;
-	border-top: 3px solid #6b2b11;
-	border-left: 1px solid #EEEEEE;
-	border-right: 1px solid #EEEEEE;
-	border-bottom: 1px solid #EEEEEE;
-	-webkit-border-radius:  0px;
-	-moz-border-radius:  0px;
-	-khtml-border-radius: 0px;
-	border-radius: 0px;
-	-webkit-box-shadow: 0px 2px 2px #000;
-	-moz-box-shadow: 0px 2px 2px #000;
-	box-shadow: 0px 2px 2px #000;
-	background: url(../image/bg_down_menu.png) left top repeat;
-	z-index:106;right:0;
+  clear: both;
+  display: none;
+  position: absolute;
+  top: 95px;
+  padding: 8px;
+  min-height: 150px;
+  border-top: 3px solid #6b2b11;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 2px 2px #000;
+  -moz-box-shadow: 0px 2px 2px #000;
+  box-shadow: 0px 2px 2px #000;
+  background: url(../image/bg_down_menu.png) left top repeat;
+  z-index: 106;
+  right: 0;
+  width: 372px;
 }
 
 #header #cart.active .heading {
@@ -396,7 +401,7 @@ label {
 	border-left: 1px solid #baa07f;
 }
 /* menu */
-#menu {
+#header #menu {
 	height: 50px; width:555px; float:right; position:relative; top:120px;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -407,24 +412,24 @@ label {
 	box-shadow: 0px 0px 0px #DDDDDD;
 	
 }
-#menu ul {
+#header  #menu ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	
 }
-#menu > ul > li {
+#header  #menu > ul > li {
 	position: relative;
 	float: left;
 	z-index: 20;
 }
 
-#menu > ul > li		  {}
-#menu > ul > li:hover {
+#header #menu > ul > li		  {}
+#header  #menu > ul > li:hover {
 	
 }
-#menu > ul > li > a {
-	font-family: 'Oswald', sans-serif;
+#header  #menu > ul > li > a {
+	font-family: 'Cuprum', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	color: #d0ba9d;
@@ -438,11 +443,11 @@ label {
 	 text-shadow:1px 1px 1px #000;
 	padding:12px 12px;
 }
-#menu > ul > li.arrow_down { background:url(../image/bottom_arrow.png) 95% 25px no-repeat}
-#menu > ul > li:hover > a {
+#header  #menu > ul > li.arrow_down { background:url(../image/bottom_arrow.png) 95% 25px no-repeat}
+#header  #menu > ul > li:hover > a {
 	color:#f5e9d9;
 }
-#menu > ul > li > div {
+#header #menu > ul > li > div {
 	display: none;
 	background:#000;
 	position: absolute;
@@ -450,10 +455,10 @@ label {
 	top:44px;
 	left:5px;
 }
-#menu > ul > li:hover > div {
+#header #menu > ul > li:hover > div {
 	display: table;
 }
-#menu > ul > li > div > ul {
+#header #menu > ul > li > div > ul {
 	display: table-cell;
 	padding:12px;
 	-webkit-border-radius: 10px;
@@ -463,22 +468,22 @@ label {
 	padding-top:15px;
 	padding-bottom:5px;
 }
-#menu > ul > li ul + ul {
+#header #menu > ul > li ul + ul {
 	padding-left: 20px;
 }
-#menu > ul > li ul > li{ padding-bottom:8px}
-#menu > ul > li ul > li > a {
+#header #menu > ul > li ul > li{ padding-bottom:8px}
+#header #menu > ul > li ul > li > a {
 	text-decoration: none;
 	color: #c3ab8d;
 	white-space: nowrap;
 	min-width: 145px;
 	font-size:15px;
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Cuprum', sans-serif; 
 	font-weight:normal;
 	border-bottom:1px #000 dotted
 	
 }
-#menu > ul > li > div > ul > li > a:hover {
+#header #menu > ul > li > div > ul > li > a:hover {
 	color: #f2e9de;
 	border-bottom:1px #f2e9de dotted
 }
@@ -787,7 +792,7 @@ input.button:hover {
 	}
 .name a:hover{ color:#000}
 .box-product .price {
-  color: #E20000;
+ 
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 5px;
@@ -796,7 +801,7 @@ input.button:hover {
 
 
 
-.box-product .price{ color:#e20000; font-size:20px; font-weight: bold;padding-bottom:5px; width:100%}
+
 .box-product .price i{ font-style:normal; color:#4d4a49; font-size:12px; font-family:Arial}
 .box-product .price-old {
 	color:#ff6000;
@@ -813,8 +818,12 @@ input.button:hover {
 	margin-bottom: 4px;
 }
 /* box category */
-#column-left .box-heading{ color:#000; font-size:30px; line-height:30px; font-family: 'ThyssenJRegular'; padding-left:15px; padding-top:10px; font-weight:normal}
-.category{ background:url(../image/bg_left_column_top.jpg) left top no-repeat}
+#column-left .box-heading{ color:#000; font-size:30px; line-height:30px; font-family: 'Cuprum'; padding-left:15px; padding-top:10px; font-weight:normal}
+
+/*.category{ background:url(../image/bg_left_column_top.jpg) left top no-repeat}*/
+
+
+
 .box-category {
 	margin-top: 5px;
 	padding:10px;
@@ -834,8 +843,8 @@ input.button:hover {
 .box-category > ul > li > a {
 	text-decoration: none;
 	color: #161412;
-	font-size:12px;
-	font-family:Arial;
+	font-size:18px;
+	font-family: 'Cuprum';
 	line-height:16px
 }
 .box-category > ul > li > a.active{
@@ -1026,10 +1035,15 @@ input.button:hover {
 	box-shadow: 0px 2px 5px #555;
 }
 .product-list .image img:hover{border: 0px solid #cdcbc7;}
-.product-list .name {color:#240d06;  }
+.product-list .name {
+	color:#240d06;  
+	padding: 6px 15px
+	
+	
+	}
 
 
-.product-list .name a { color:#240d06; font-size:16px; font-family:Arial; padding:5px 15px; line-height:42px; text-decoration:none; font-weight:bold}
+.product-list .name a { color:#240d06; font-size:16px; font-family:Arial;  line-height:30px; text-decoration:none; font-weight:bold}
 .product-list .name a:hover{ color:#000}
 
 .description {
@@ -1059,13 +1073,14 @@ input.button:hover {
 	color: #7B7B7B;
 }
 .product-list .price {
-	margin-left: 15px;
-	text-align: left;
-	color: #e20000;
-	font-size: 20px;
-	font-weight:bold;
-	float:left;
-	margin-right:20px
+  /* margin-left: 15px; */
+  text-align: left;
+  /* color: #e20000; */
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  /* margin-right: 20px; */
+  margin: 15px;
 }
 .product-list .price-old {
 	color: #555;
@@ -1133,7 +1148,7 @@ input.button:hover {
 	margin-bottom: 4px;
 }
 .product-grid .price {
-  color: #E20000;
+  
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 0px;
@@ -1685,7 +1700,7 @@ input.button:hover {
 }
 .checkout-content {
 	padding: 0px 0px 15px 0px;
-	display: none;
+	
 	overflow: auto;
 }
 .checkout-content .left {
@@ -1778,7 +1793,7 @@ div.centr{ width:950px; margin:0 auto;}
 	margin-top: 10px;
 	margin-bottom: 18px;
 	text-transform:uppercase;
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Cuprum', sans-serif; 
 	font-weight:normal;
 	letter-spacing:1px 
 }
@@ -1842,40 +1857,7 @@ div.social a._1{ background:url(../image/social_1.png) left top no-repeat;}
 div.social a._2{ background:url(../image/social_2.png) left top no-repeat;}
 div.social a._3{ background:url(../image/social_3.png) left top no-repeat;}
 
-@font-face {
-    font-family: 'MyriadProBoldCondensed';
-    src: url('myriadpro-boldcond-webfont.eot');
-    src: url('myriadpro-boldcond-webfont.eot?#iefix') format('embedded-opentype'),
-         url('myriadpro-boldcond-webfont.woff') format('woff'),
-         url('myriadpro-boldcond-webfont.ttf') format('truetype'),
-         url('myriadpro-boldcond-webfont.svg#MyriadProBoldCondensed') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-
-@font-face {
-    font-family: 'ThyssenJRegular';
-    src: url('thysen-webfont.eot');
-    src: url('thysen-webfont.eot?#iefix') format('embedded-opentype'),
-         url('thysen-webfont.woff') format('woff'),
-         url('thysen-webfont.ttf') format('truetype'),
-         url('thysen-webfont.svg#ThyssenJRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'MyriadProCondensed';
-    src: url('myriadpro-cond-webfont.eot');
-    src: url('myriadpro-cond-webfont.eot?#iefix') format('embedded-opentype'),
-         url('myriadpro-cond-webfont.woff') format('woff'),
-         url('myriadpro-cond-webfont.ttf') format('truetype'),
-         url('myriadpro-cond-webfont.svg#MyriadProCondensed') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 
 
@@ -1889,7 +1871,7 @@ div.social a._3{ background:url(../image/social_3.png) left top no-repeat;}
 	height:311px;
  }
  .carousel-box .box-heading {
-	font-family: 'ThyssenJRegular';
+	font-family: 'Cuprum', Times New Roman;
 	font-size:36px;
 	font-weight: normal;
 	line-height: 40px;
@@ -1988,7 +1970,7 @@ div.latest {
 div.latest .box-heading {
   background: url(../image/bg_box_head_1.png) 50% 19px no-repeat;
   height: 75px;
-  font-family: 'ThyssenJRegular';
+  font-family: 'Cuprum', Times New Roman;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
@@ -2012,11 +1994,11 @@ div.box-product > div { float: left;
 
 .clear{ clear:both}
 
-.latest .box-product { padding-left:50px; background:url(../image/bg_categories.png) left 185px repeat-y}
+.latest .box-product { padding-left:50px; background:url(../image/bg_categories.png) left 177px repeat-y}
 
 
-.phone #banner0{ position:absolute; z-index:100; left:25px; bottom:12px}
-
+/*.phone #banner0{ position:absolute; z-index:100; left:25px; bottom:12px}*/
+.phone #banner0 {margin-left: 15px;}
 #column-left + #content div.product-grid{ background:url(../image/bg_categories.png) left 177px repeat-y; padding-left:10px}
 
 div.tags{ margin-bottom:20px}
@@ -2034,17 +2016,17 @@ div.phone_bottom{
 	position:relative;
 	text-shadow:1px 1px  #ccaf8a ;
 	float:right;
-	font-family: 'Oswald', sans-serif; 
-	font-size:32px; line-height:35px;
+	font-family: 'Cuprum', sans-serif; 
+	font-size:20px; line-height:35px;
 	color:#4c3623;
 	padding-right:160px;
 	padding-top:0px;
-	margin-top:-1px
+	  margin-top: 68px;
 }
 div.phone_bottom p {
 	color:#342112;
-	font-size:55px;
-	margin-top:25px
+	font-size:30px;
+	margin-top:0px
 }
 .alpha60 {
 	/* Fallback for web browsers that doesn't support RGBa */
@@ -2055,4 +2037,46 @@ div.phone_bottom p {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF);
 	/* For IE 8*/
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF)";
+}
+
+.phones {
+  color: #6a260d;
+  position: absolute;
+  top: 2px;
+  right: -17px;
+  font-size: 18px;
+  font-weight:bold;
+  background: url(../image/bg_box_head_2.png) 0 0 no-repeat;
+  height: 50px;
+  padding: 42px 0;
+  width:240px;
+  font-family:'Cuprum';
+}
+.phone_ico {
+  padding-left: 80px;
+  background: url(../image/phone.png) left 50% no-repeat;
+  text-shadow: 1px 1px #b8a88e;
+}
+
+.roll_top {
+	  background: url(../image/roll_top.png) -20px -9px no-repeat;
+	  color:#CDB576;
+}
+ /*.roll_bg>ul>li>a{
+	color:#CDB576;
+}*/
+#column-left .roll_top .box-heading  {padding-left: 40px;}
+.roll_bottom {
+	background: url(../image/roll_bottom.png) -20px 100% no-repeat;
+	  padding-bottom: 64px;
+}
+
+.roll_bg {
+  background: url(../image/roll_bg.png) 0 0 repeat-y;
+  padding: 0 0 0 10px;
+  margin: 20px 0 0 25px;
+}
+.f1 {
+  color: #342112;
+  text-shadow: 1px 1px #ccaf8a;
 }

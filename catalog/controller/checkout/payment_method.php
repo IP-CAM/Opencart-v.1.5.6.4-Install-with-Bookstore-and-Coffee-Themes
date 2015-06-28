@@ -4,14 +4,14 @@ class ControllerCheckoutPaymentMethod extends Controller {
 		$this->language->load('checkout/checkout');
 
 		$this->load->model('account/address');
-
+$payment_address='';
 		if ($this->customer->isLogged() && isset($this->session->data['payment_address_id'])) {
 			$payment_address = $this->model_account_address->getAddress($this->session->data['payment_address_id']);		
 		} elseif (isset($this->session->data['guest'])) {
 			$payment_address = $this->session->data['guest']['payment'];
 		}	
 
-		if (!empty($payment_address)) {
+		//if (!empty($payment_address)) {
 			// Totals
 			$total_data = array();					
 			$total = 0;
@@ -76,7 +76,7 @@ class ControllerCheckoutPaymentMethod extends Controller {
 
 			$this->session->data['payment_methods'] = $method_data;	
 
-		}			
+		//}			
 
 		$this->data['text_payment_method'] = $this->language->get('text_payment_method');
 		$this->data['text_comments'] = $this->language->get('text_comments');

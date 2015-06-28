@@ -1,6 +1,6 @@
 <?php
 class Language {
-	private $default = 'english';
+	private $default = 'russian';
 	private $directory;
 	private $data = array();
 
@@ -9,9 +9,10 @@ class Language {
 	}
 
 	public function get($key) {
+		if ($key=='all') return $this->data;
 		return (isset($this->data[$key]) ? $this->data[$key] : $key);
 	}
-
+	
 	public function load($filename) {
 		$file = DIR_LANGUAGE . $this->directory . '/' . $filename . '.php';
 

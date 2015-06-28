@@ -1,4 +1,6 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<?php echo $header; ?>
+<div class="bg_content">
+<?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -110,6 +112,7 @@
   </div>
   <?php } ?>
   <?php echo $content_bottom; ?></div>
+</div> <!-- bg_content-->
 <script type="text/javascript"><!--
 function display(view) {
 	if (view == 'list') {
@@ -129,15 +132,15 @@ function display(view) {
 			
 			
 			
-			var price = $(element).find('.price').html();
+		
+					
+			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
+			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
+				var price = $(element).find('.price').html();
 			
 			if (price != null) {
 				html += '<div class="price">' + price  + '</div>';
 			}
-					
-			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
-			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
-			
 			var rating = $(element).find('.rating').html();
 			
 			if (rating != null) {
@@ -163,7 +166,7 @@ function display(view) {
 			if (image != null) {
 				html += '<div class="image">' + image + '</div>';
 			}
-			
+			html += '<div class="open_content" style="display: none;"> ';
 			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
 			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
 			
@@ -180,7 +183,7 @@ function display(view) {
 			}
 						
 			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
-			
+			html +='</div>';
 			
 			$(element).html(html);
 		});	
