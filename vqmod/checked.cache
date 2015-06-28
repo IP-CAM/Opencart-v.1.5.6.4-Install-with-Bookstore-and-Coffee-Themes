@@ -474,3 +474,7 @@ catalog\view\theme\default\template\common\content_bottom.tpl
 catalog\view\theme\default\template\common\footer.tpl
 catalog\view\theme\default\template\common\header.tpl
 catalog\view\theme\default\template\common\home.tpl
+catalog\view\theme\bookstore\template\payment\cod.tpl
+catalog\view\theme\bookstore\template\checkout\total_data.tpl
+catalog\view\theme\bookstore\template\checkout\payment_data.tpl
+catalog\language\russian\account\order.php

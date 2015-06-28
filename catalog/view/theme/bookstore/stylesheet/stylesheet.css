@@ -85,7 +85,7 @@ input[type='text'], input[type='password'], textarea {
 	padding: 3px;
 	margin-top: 4px;
 	margin-right: 0px;
-	min-width:300px;
+	
 	margin-bottom:5px
 }
 select {
@@ -542,8 +542,8 @@ table.form > * > * > td {
 table.form td {
 	padding: 4px;
 }
-input.large-field, select.large-field {
-	width: 300px;
+input.large-field, select.large-field, textarea.large-field{
+	width: 250px;
 }
 table.list {
 	border-collapse: collapse;

@@ -335,3 +335,40 @@
 2015-06-28 13:28:31 - PHP Notice:  Undefined variable: shipping_required in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\default\template\checkout\checkout.tpl on line 243
 2015-06-28 13:28:31 - PHP Notice:  Undefined variable: shipping_required in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\default\template\checkout\checkout.tpl on line 415
 2015-06-28 13:28:31 - PHP Notice:  Undefined variable: shipping_required in C:\xampp\htdocs\opencart15.test\www\catalog\view\theme\default\template\checkout\checkout.tpl on line 661
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 18:58:21 - PHP Warning:  DBMySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 60
+2015-06-28 19:39:35 - PHP Notice:  Undefined index: country_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 323
+2015-06-28 19:39:35 - PHP Notice:  Undefined index: country_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 334
+2015-06-28 19:39:35 - PHP Notice:  Undefined index: country_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 335
+2015-06-28 19:39:35 - PHP Notice:  Undefined index: postcode in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 336
+2015-06-28 19:39:35 - PHP Notice:  Undefined index: postcode in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 337
+2015-06-28 19:39:35 - PHP Notice:  Undefined index: zone_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 339
+2015-06-28 19:39:35 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 354
+2015-06-28 19:39:35 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 355
+2015-06-28 19:39:51 - PHP Notice:  Undefined index: country_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 323
+2015-06-28 19:39:51 - PHP Notice:  Undefined index: country_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 334
+2015-06-28 19:39:52 - PHP Notice:  Undefined index: country_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 335
+2015-06-28 19:39:52 - PHP Notice:  Undefined index: postcode in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 336
+2015-06-28 19:39:52 - PHP Notice:  Undefined index: postcode in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 337
+2015-06-28 19:39:52 - PHP Notice:  Undefined index: zone_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 339
+2015-06-28 19:39:52 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 354
+2015-06-28 19:39:52 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 355
+2015-06-28 19:44:38 - PHP Notice:  Undefined index: postcode in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 337
+2015-06-28 19:44:38 - PHP Notice:  Undefined index: postcode in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 338
+2015-06-28 19:44:38 - PHP Notice:  Undefined index: zone_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 340
+2015-06-28 19:44:38 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 355
+2015-06-28 19:44:38 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 356
