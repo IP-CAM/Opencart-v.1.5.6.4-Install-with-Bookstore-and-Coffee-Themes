@@ -330,7 +330,12 @@ class ModelCatalogProduct extends Model {
 
 		return $query->row;
 	}
-
+    public    function logToFile($filename, $msg)   { 
+        
+        $fd = fopen($filename, "a");   
+        fwrite($fd, $msg . "\n");   
+        fclose($fd);
+   }
 	public function getProducts($data = array()) {
 		$sql = "SELECT * FROM " . DB_PREFIX . "product p LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id)";
 
@@ -341,7 +346,7 @@ class ModelCatalogProduct extends Model {
 		$sql .= " WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "'"; 
 
 		if (!empty($data['filter_name'])) {
-			$sql .= " AND pd.name LIKE '" . $this->db->escape($data['filter_name']) . "%'";
+			$sql .= " AND pd.name LIKE '%" . $this->db->escape($data['filter_name']) . "%'";
 		}
 
 		if (!empty($data['filter_model'])) {
@@ -394,7 +399,7 @@ class ModelCatalogProduct extends Model {
 
 			$sql .= " LIMIT " . (int)$data['start'] . "," . (int)$data['limit'];
 		}	
-
+        //$this->logToFile(dirname(__FILE__)."/sql.log", $sql);
 		$query = $this->db->query($sql);
 
 		return $query->rows;

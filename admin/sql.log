@@ -1,0 +1,1 @@
+SELECT * FROM oc_product p LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) WHERE pd.language_id = '2' AND pd.name LIKE 'Аполлинер Г. Подвиги юного Дон Жуана%' GROUP BY p.product_id ORDER BY pd.name ASC LIMIT 0,20
