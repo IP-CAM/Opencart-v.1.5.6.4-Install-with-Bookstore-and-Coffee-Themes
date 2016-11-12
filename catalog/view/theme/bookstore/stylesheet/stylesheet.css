@@ -24,7 +24,7 @@ body, td, th, input, textarea, select, a {
 
 h1, .welcome {
 	color: #161412;
-	font-family: 'Cuprum';
+	font-family: TimesNewRoman;
 	margin-bottom: 15px;
 	font-size: 30px;
 	font-weight: normal;
@@ -36,7 +36,7 @@ h1, .welcome {
 }
 h2 {
 	color: #000;
-	font-family: 'Cuprum', sans-serif; 
+	font-family: TimesNewRoman, sans-serif; 
 	margin-top: 20px;
 	margin-bottom: 15px;
 	font-size: 18px;
@@ -214,7 +214,7 @@ position: absolute;
   z-index: 106;
   min-width: 300px;
   background: url(../image/bg_box_head_2.png) 50px 0px no-repeat;
-  font-family:'Cuprum';
+  font-family:TimesNewRoman;
 }
 #header #cart .heading {
 	float: right;
@@ -429,7 +429,7 @@ position: absolute;
 	
 }
 #header  #menu > ul > li > a {
-	font-family: 'Cuprum', sans-serif;
+	font-family: TimesNewRoman, sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	color: #d0ba9d;
@@ -478,7 +478,7 @@ position: absolute;
 	white-space: nowrap;
 	min-width: 145px;
 	font-size:15px;
-	font-family: 'Cuprum', sans-serif; 
+	font-family: TimesNewRoman, sans-serif; 
 	font-weight:normal;
 	border-bottom:1px #000 dotted
 	
@@ -818,7 +818,7 @@ input.button:hover {
 	margin-bottom: 4px;
 }
 /* box category */
-#column-left .box-heading{ color:#000; font-size:30px; line-height:30px; font-family: 'Cuprum'; padding-left:15px; padding-top:10px; font-weight:normal}
+#column-left .box-heading{ color:#000; font-size:30px; line-height:30px; font-family: TimesNewRoman; padding-left:15px; padding-top:10px; font-weight:normal}
 
 /*.category{ background:url(../image/bg_left_column_top.jpg) left top no-repeat}*/
 
@@ -844,7 +844,7 @@ input.button:hover {
 	text-decoration: none;
 	color: #161412;
 	font-size:18px;
-	font-family: 'Cuprum';
+	font-family: TimesNewRoman;
 	line-height:16px
 }
 .box-category > ul > li > a.active{
@@ -1793,7 +1793,7 @@ div.centr{ width:950px; margin:0 auto;}
 	margin-top: 10px;
 	margin-bottom: 18px;
 	text-transform:uppercase;
-	font-family: 'Cuprum', sans-serif; 
+	font-family: TimesNewRoman, sans-serif; 
 	font-weight:normal;
 	letter-spacing:1px 
 }
@@ -1871,7 +1871,7 @@ div.social a._3{ background:url(../image/social_3.png) left top no-repeat;}
 	height:311px;
  }
  .carousel-box .box-heading {
-	font-family: 'Cuprum', Times New Roman;
+	font-family: TimesNewRoman, Times New Roman;
 	font-size:36px;
 	font-weight: normal;
 	line-height: 40px;
@@ -1970,7 +1970,7 @@ div.latest {
 div.latest .box-heading {
   background: url(../image/bg_box_head_1.png) 50% 19px no-repeat;
   height: 75px;
-  font-family: 'Cuprum', Times New Roman;
+  font-family: TimesNewRoman, Times New Roman;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
@@ -2016,7 +2016,7 @@ div.phone_bottom{
 	position:relative;
 	text-shadow:1px 1px  #ccaf8a ;
 	float:right;
-	font-family: 'Cuprum', sans-serif; 
+	font-family: TimesNewRoman, sans-serif; 
 	font-size:20px; line-height:35px;
 	color:#4c3623;
 	padding-right:160px;
@@ -2050,7 +2050,7 @@ div.phone_bottom p {
   height: 50px;
   padding: 42px 0;
   width:240px;
-  font-family:'Cuprum';
+  font-family:TimesNewRoman;
 }
 .phone_ico {
   padding-left: 80px;

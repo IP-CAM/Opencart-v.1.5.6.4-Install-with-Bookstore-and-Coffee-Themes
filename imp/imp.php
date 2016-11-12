@@ -1,4 +1,5 @@
 <?php
+die();
 require('inc.php');
 /*
 
@@ -41,7 +42,7 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 ($start, 62);
 
 INSERT INTO `oc_url_alias` (`query`, `keyword`) VALUES
-('category_id=$start', '$trans');
+('product_id=$start', '$trans');
 
 
 

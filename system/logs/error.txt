@@ -372,3 +372,12 @@
 2015-06-28 19:44:38 - PHP Notice:  Undefined index: zone_id in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 340
 2015-06-28 19:44:38 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 355
 2015-06-28 19:44:38 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart15.test\www\catalog\controller\checkout\checkout.php on line 356
+2015-07-02 14:59:36 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
+2015-07-02 14:59:39 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
+2015-07-02 14:59:43 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
+2015-07-02 15:00:06 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
+2015-07-02 15:00:12 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
+2015-07-02 15:00:15 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
+2015-07-02 15:00:19 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
+2015-07-02 15:00:23 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
+2015-07-02 15:36:47 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in C:\xampp\htdocs\opencart15.test\www\system\database\mysqli.php on line 17
